@@ -13,6 +13,9 @@
 * [tkinter](//github.com/XinRoom/task/blob/master/python/Python_tk_V3.py)
 * [tkinter 文件管理器](//github.com/XinRoom/task/blob/master/python/File_Manager.py)
 * [m3u8 aes解密](//github.com/XinRoom/task/blob/master/python/m3u8.py)
+* [utils](//github.com/XinRoom/task/tree/master/python/utils)
+    * [process](//github.com/XinRoom/task/blob/master/python/utils/process.py) 进程io管理相关，主要使用环境为Windows，python38
+    * [files](//github.com/XinRoom/task/blob/master/python/utils/files.py) 文件和路径操作相关函数
 
 ### C++
 * [第一次c++课程设计-Drawing](//github.com/XinRoom/task/tree/master/c++/curriculum_design_first)
