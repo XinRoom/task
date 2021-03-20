@@ -16,6 +16,7 @@
 * [utils](//github.com/XinRoom/task/tree/master/python/utils)
     * [process](//github.com/XinRoom/task/blob/master/python/utils/process.py) 进程io管理相关，主要使用环境为Windows，python38
     * [files](//github.com/XinRoom/task/blob/master/python/utils/files.py) 文件和路径操作相关函数
+* [mk_to_md](//github.com/XinRoom/task/tree/master/python/mk_to_md.py) 用来将百度脑图导出的md进一步转换成紧凑清晰的md文件
 
 ### C++
 * [第一次c++课程设计-Drawing](//github.com/XinRoom/task/tree/master/c++/curriculum_design_first)
