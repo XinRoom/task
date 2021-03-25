@@ -138,7 +138,7 @@ class Cmd:
         if not self.isOver():
             self.subp.kill()
 
-    def readline(self):
+    def readline(self) -> str:
         """读取一行"""
         if self.isOver():
             return self.decode(self.outbuf_io.read())
@@ -155,10 +155,10 @@ class Cmd:
             buf += _buf
             print(_buf, end='')
             sys.stdout.flush()
-        _buf = self.decode(self.errbuf_io.readline(1))
+        _buf = self.decode(self.errbuf_io.read())
         buf += _buf
         print(_buf, end='')
-        _buf = self.decode(self.outbuf_io.readline(1))
+        _buf = self.decode(self.outbuf_io.read())
         buf += _buf
         print(_buf, end='')
         return buf
@@ -181,11 +181,11 @@ class Cmd:
         _buf += self.outbuf_io.read()
         return _buf
     
-    def send(self, data):
+    def send(self, data: str):
         """向子进程输入内容"""
         self.subp.stdin.write(data.encode(self.encoding))
     
-    def sendline(self, data):
+    def sendline(self, data: str):
         """向子进程输入内容并回车"""
         if THISOS == 'windows':
             self.send(data + "\r\n")
